@@ -10,15 +10,15 @@ Url: http://sugarlabs.org/go/DevelopmentTeam/gst-plugins-espeak
 
 Source: http://download.sugarlabs.org/sources/honey/gst-plugins-espeak/gst-plugins-espeak-0.1.tar.bz2
 
-Requires: gstreamer  
 Requires: glib2  
 Requires: gstreamer0.10-plugins-base  
 Requires: gstreamer0.10-plugins-good  
+Requires: gstreamer  
 
-BuildRequires: libgstreamer-devel  
-BuildRequires: glib2-devel  
 BuildRequires: libespeak-devel  
+BuildRequires: glib2-devel  
 BuildRequires: libgstreamer-plugins-base-devel  
+BuildRequires: libgstreamer-devel  
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
