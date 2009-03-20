@@ -10,6 +10,7 @@ Url: http://sugarlabs.org/go/DevelopmentTeam/gst-plugins-espeak
 
 Source: http://download.sugarlabs.org/sources/honey/gst-plugins-espeak/gst-plugins-espeak-0.3.tar.bz2
 
+Requires: espeak  
 Requires: gstreamer0.10-plugins-base  
 Requires: gstreamer0.10-plugins-good  
 Requires: gstreamer  
