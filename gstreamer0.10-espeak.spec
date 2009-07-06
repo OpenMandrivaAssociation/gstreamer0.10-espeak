@@ -21,6 +21,7 @@ BuildRequires: libgstreamer-devel
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
+
 %description
 Simple gstreamer plugin to use espeak by way of sound source.
 It was developed to simplify espeak usage in Sugar Speak activity.
@@ -29,18 +30,14 @@ It was developed to simplify espeak usage in Sugar Speak activity.
 %setup -q -n gst-plugins-espeak-0.3.3
 
 
-# eliminate %%configure's "clever" behaviour
-%define __libtoolize true
-
 %build
-%configure 
-make 
+%define __libtoolize true
+%configure
+make
 
 %install
 rm -rf %{buildroot}
-make  \
-	install \
-	DESTDIR=%{buildroot}
+make DESTDIR=%{buildroot} install
 
 
 %clean
