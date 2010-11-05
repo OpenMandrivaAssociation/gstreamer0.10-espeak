@@ -20,7 +20,7 @@ BuildRequires: libespeak-devel
 BuildRequires: libgstreamer-plugins-base-devel  
 BuildRequires: libgstreamer-devel  
 
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 
 
 %description
@@ -29,16 +29,15 @@ It was developed to simplify espeak usage in Sugar Speak activity.
 
 %prep
 %setup -q -n gst-plugins-espeak-0.3.3
-
+sed -i 's/NANO=1/NANO=0/g' configure
 
 %build
-%define __libtoolize true
-%configure
-make
+%configure2_5x
+%make
 
 %install
 rm -rf %{buildroot}
-make DESTDIR=%{buildroot} install
+%makeinstall_std
 
 
 %clean
