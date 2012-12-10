@@ -41,3 +41,32 @@ sed -i 's/NANO=1/NANO=0/g' configure
 %doc AUTHORS COPYING NEWS README
 %{_libdir}/gstreamer*/*
 
+
+
+%changelog
+* Mon May 28 2012 Andrey Bondrov <abondrov@mandriva.org> 0.3.5-1mdv2012.0
++ Revision: 800949
+- New version 0.3.5, spec cleanup
+
+* Fri Nov 05 2010 Funda Wang <fwang@mandriva.org> 0.3.3-2mdv2011.0
++ Revision: 593571
+- build release plugin
+- rebuild for gstreamer provides
+
+* Fri May 01 2009 Aleksey Lim <alsroot@mandriva.org> 0.3.3-1mdv2010.0
++ Revision: 369903
+- update version to 0.3.3
+
+* Sat Mar 21 2009 Aleksey Lim <alsroot@mandriva.org> 0.3.1-1mdv2009.1
++ Revision: 360049
+- update version to 0.3.1
+
+* Fri Mar 13 2009 Aleksey Lim <alsroot@mandriva.org> 0.3-1mdv2009.1
++ Revision: 354524
+- update to 0.3 release
+- update to new version 0.2
+
+* Tue Feb 17 2009 Aleksey Lim <alsroot@mandriva.org> 0.1-1mdv2009.1
++ Revision: 341766
+- Initial commit
+
