@@ -3,7 +3,7 @@
 
 Name:		gstreamer0.10-espeak
 Version:	0.3.5
-Release:	%mkrel 1
+Release:	2
 Summary:	Simple gstreamer plugin to use espeak by way of sound source
 License:	LGPLv2+
 Group:		Sound
