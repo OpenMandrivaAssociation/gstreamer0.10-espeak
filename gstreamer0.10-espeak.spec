@@ -7,7 +7,7 @@ Release:	2
 Summary:	Simple gstreamer plugin to use espeak by way of sound source
 License:	LGPLv2+
 Group:		Sound
-Url:		http://sugarlabs.org/go/DevelopmentTeam/gst-plugins-espeak
+Url:		https://sugarlabs.org/go/DevelopmentTeam/gst-plugins-espeak
 Source:		http://download.sugarlabs.org/sources/honey/gst-plugins-espeak/gst-plugins-espeak-%{version}.tar.gz
 Requires:	espeak
 Requires:	gstreamer0.10-plugins-base
